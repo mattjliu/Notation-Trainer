@@ -58,7 +58,7 @@ class About extends Component {
 
         <p class='text'>
           This app was created using <a href="https://reactjs.org/">ReactJS</a> with the use 
-          of <a href="https://github.com/willb335/chessboardjsx">Chessboard.jsx</a> and <a href="https://github.com/jhlywa/chess.js">chess.js</a>.
+          of <a href="https://chessboardjsx.com/">Chessboard.jsx</a> and <a href="https://github.com/jhlywa/chess.js">chess.js</a>.
           The positions generated from the board are real positions from world championship games. 
           The PGN files from those events were downloaded <a href="https://www.pgnmentor.com/files.html#world">here</a>.
           You can also view the source code at my <a href="https://github.com/mattjliu/Notation-Trainer">github repository</a>.
