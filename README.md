@@ -1,6 +1,6 @@
 # Notation Trainer
 
-This is a [ReactJS](https://reactjs.org/) app I created to help chess players learn and practice [algebraic chess notation](https://en.wikipedia.org/wiki/Algebraic_notation_(chess)). The app is built using [chessboardjsx](https://github.com/willb335/chessboardjsx) and [chess.js](https://github.com/jhlywa/chess.js). 
+This is a [ReactJS](https://reactjs.org/) app I created to help chess players learn and practice [algebraic chess notation](https://en.wikipedia.org/wiki/Algebraic_notation_(chess)). The app is built using [chessboardjsx](https://chessboardjsx.com/) and [chess.js](https://github.com/jhlywa/chess.js). 
 
 ## How to use
 
