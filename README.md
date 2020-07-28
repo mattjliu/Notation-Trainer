@@ -4,7 +4,7 @@ This is a [ReactJS](https://reactjs.org/) app I created to help chess players le
 
 ## How to use
 
-The app will render a position of the board and prompt you with a chess move written in algebraic notation. Make the correct move and a new position is generated. Your goal is to make as many moves as possible in 60 seconds. You can toggle the side to white, black or random (this also changes the orientation of board). 
+The app will render a position on the board and prompt you with a chess move written in algebraic notation. Make the correct move and a new position is generated. Your goal is to make as many moves as possible in 60 seconds. You can toggle the side to white, black or random (this also changes the orientation of board). 
 
 Here is a gif of the app in action:
 
