@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/Notation-Trainer/static/css/main.0131da13.chunk.css",
+    "main.js": "/Notation-Trainer/static/js/main.d6078859.chunk.js",
+    "main.js.map": "/Notation-Trainer/static/js/main.d6078859.chunk.js.map",
+    "runtime-main.js": "/Notation-Trainer/static/js/runtime-main.a361197f.js",
+    "runtime-main.js.map": "/Notation-Trainer/static/js/runtime-main.a361197f.js.map",
+    "static/js/2.86be71ab.chunk.js": "/Notation-Trainer/static/js/2.86be71ab.chunk.js",
+    "static/js/2.86be71ab.chunk.js.map": "/Notation-Trainer/static/js/2.86be71ab.chunk.js.map",
+    "index.html": "/Notation-Trainer/index.html",
+    "precache-manifest.7220beab1bc4f05e67477cce9aadee31.js": "/Notation-Trainer/precache-manifest.7220beab1bc4f05e67477cce9aadee31.js",
+    "service-worker.js": "/Notation-Trainer/service-worker.js",
+    "static/css/main.0131da13.chunk.css.map": "/Notation-Trainer/static/css/main.0131da13.chunk.css.map",
+    "static/js/2.86be71ab.chunk.js.LICENSE.txt": "/Notation-Trainer/static/js/2.86be71ab.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.a361197f.js",
+    "static/js/2.86be71ab.chunk.js",
+    "static/css/main.0131da13.chunk.css",
+    "static/js/main.d6078859.chunk.js"
+  ]
+}
