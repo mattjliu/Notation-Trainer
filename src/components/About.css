@@ -1,0 +1,59 @@
+body {
+    overflow-x: hidden;
+}
+
+.text-container {
+    text-align: center;
+    margin: auto;
+    max-width: 1000px;
+    align-items: center;
+}
+
+.text {
+    display: inline-block;
+    font-family: 'Calibri';
+    font-size: 20px;
+    font-weight: 100;
+    margin: 20px 5%;
+}
+
+.special-font {
+    font-family: "Consolas";
+    font-weight: bold;
+    line-height: 1.4;
+}
+
+a {
+    text-decoration: underline;
+}
+
+a:hover {
+    color: #2196F3;
+}
+
+.button-container {
+    text-align: center;
+}
+
+.back-button {
+    font-family: 'Consolas';
+    font-weight: bold;
+    font-size: 20px;  
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 30px;
+    margin: 20px 2px 0px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    transition-duration: 0.4s;
+    background-color: white;
+    color: black;
+    border: 2px solid #555555;
+  }
+
+  .back-button:hover {
+    background-color: #555555;
+    color: white;
+  }

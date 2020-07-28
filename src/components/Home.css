@@ -1,0 +1,41 @@
+.init-container, .ended-container {
+    font-size: 28px;
+    text-align: center;
+}
+
+.button {
+    font-family: 'Consolas';
+    font-weight: bold;
+    font-size: 20px;  
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 16px;
+    margin: 10px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    transition-duration: 0.4s;
+  }
+
+.start {
+    background-color: white;
+    color: black;
+    border: 2px solid #555555;
+}
+
+.start:hover {
+    background-color: #555555;
+    color: white;
+  }
+
+.about {
+    background-color: white;
+    color: black;
+    border: 2px solid #555555;
+}
+
+.about:hover {
+    background-color: #555555;
+    color: white;
+  }

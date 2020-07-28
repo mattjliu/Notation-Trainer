@@ -1,38 +1,47 @@
-.App {
-  text-align: center;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  font-family: "Consolas";
+  font-weight: bold;
+  line-height: 1.4;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+a{
+  color: #333;
+  text-decoration: none;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.board-container {
   display: flex;
-  flex-direction: column;
+  justify-content: space-around;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-wrap: wrap;
+  width: 100vw;
+  margin-top: 30;
+  margin-bottom: 50;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* For chessboardjsx notation font, there are no notation props for chessboardjsx */
+div[data-testid=bottom-left-a], 
+div[data-testid=bottom-left-h], 
+div[data-testid=column-a], 
+div[data-testid=column-b], 
+div[data-testid=column-c], 
+div[data-testid=column-d], 
+div[data-testid=column-e],
+div[data-testid=column-f], 
+div[data-testid=column-g], 
+div[data-testid=column-h],
+div[data-testid=bottom-left-1],
+div[data-testid=bottom-left-8],
+div[data-testid=white-square] > div:first-child > div:first-child:not([data-testid]),
+div[data-testid=white-square] > div:first-child > div:last-child:not([data-testid]),
+div[data-testid=black-square] > div:first-child > div:first-child:not([data-testid]),
+div[data-testid=black-square] > div:first-child > div:last-child:not([data-testid]) {
+  font-family: "Consolas" !important;
+  font-weight: bold !important;
 }
