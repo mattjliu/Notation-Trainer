@@ -34,22 +34,22 @@ class Settings extends Component {
       <div class="settingsContainer" style={this.props.style} >
         <div class="radio-group-container" onChange={this.onChangeOrientation}>
           <label class="radio-container">White
-            <input type="radio" value="white" name="orientation" defaultChecked /> 
+            <input type="radio" value="white" name="orientation" defaultChecked disabled={this.props.disabled}/> 
             <span class="checkmark"></span>
           </label>
           <label class="radio-container">Black 
-            <input type="radio" value="black" name="orientation" /> 
+            <input type="radio" value="black" name="orientation" disabled={this.props.disabled}/> 
             <span class="checkmark"></span>
           </label>
           <label class="radio-container">Random
-            <input type="radio" value="random" name="orientation" /> 
+            <input type="radio" value="random" name="orientation" disabled={this.props.disabled}/> 
             <span class="checkmark"></span>
           </label>
         </div>
 
         <div class="checkbox-group-container">
           <label class="checkbox-container">Show Coordinates 
-            <input type="checkbox" onChange={this.onChangeNotation} /> 
+            <input type="checkbox" onChange={this.onChangeNotation} disabled={this.props.disabled}/> 
             <span class="checkmark"></span>
           </label>
         </div>   

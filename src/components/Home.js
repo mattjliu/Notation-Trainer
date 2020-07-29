@@ -34,7 +34,10 @@ class Home extends Component {
             showNotation={this.state.showNotation}
             calcWidth={calcWidth}
             />
-            <button class='start button' onClick={this.handleStart}>Start</button>
+            <button class='start button' onClick={this.handleStart}>Start</button>|
+            <Link to='/practice'>
+              <button class='practice button'>Practice</button>
+            </Link>|
             <Link to='/about'>
               <button class='about button'>About</button>
             </Link>
@@ -48,7 +51,8 @@ class Home extends Component {
             callbackEnd={this.callbackEnd} 
             orientation={this.state.orientation} 
             showNotation={this.state.showNotation} 
-            calcWidth={calcWidth} />
+            calcWidth={calcWidth}
+            timed={true} />
           </div>
         );
 
@@ -62,7 +66,10 @@ class Home extends Component {
             showNotation={this.state.showNotation} 
             calcWidth={calcWidth}
             />
-            <button class='start button' onClick={this.handleStart}>Start</button>
+            <button class='start button' onClick={this.handleStart}>Start</button>|
+            <Link to='/practice'>
+              <button class='practice button'>Practice</button>
+            </Link>|
             <Link to='/about'>
               <button class='about button'>About</button>
             </Link>
