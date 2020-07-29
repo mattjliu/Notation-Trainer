@@ -57,7 +57,14 @@ class Board extends Component {
           finalBoardProps)
       }, this.state.time * 1000);
     }
+  }
 
+  componentDidUpdate(prevProps) {
+    if(!this.props.timed) {
+      if(this.props.orientation !== prevProps.orientation){
+        this.newPosition();
+      }
+    } 
   }
 
   componentWillUnmount() {
@@ -152,6 +159,9 @@ class Board extends Component {
     if (this.state.nextMoveData.from === sourceSquare 
        && this.state.nextMoveData.to === targetSquare
        && (this.state.nextMoveData.color + this.state.nextMoveData.piece.toUpperCase()) === piece) {
+        if(!this.props.timed) {
+          this.props.callbackDisableSettings(true);
+        }
         game.move(this.state.nextMove); 
         this.setState({ 
           answer: 'correct', 
@@ -182,6 +192,12 @@ class Board extends Component {
       this.newPosition();
     }
     this.setState({ incorrect: false, correct: false });
+
+    if(!this.props.timed) {
+      setTimeout(() => {
+        this.props.callbackDisableSettings(false)
+      }, 800);
+    }
   }
 
   /* ====================================== Render Function ====================================== */
@@ -192,7 +208,9 @@ class Board extends Component {
 
     return (
       <div>
-        <Timer time={this.state.time - this.state.timerCount} />
+        <Timer 
+          time={this.state.time - this.state.timerCount} 
+          display={this.props.timed ? 'block' : 'none'} />
         <Chessboard
           position={this.state.fen} 
           squareStyles={this.state.squareStyles}
@@ -219,7 +237,9 @@ class Board extends Component {
 
 function Timer(props) {
   return (
-    <div class="timer-container" style={props.time < 10 ? {color: 'red'} : {}}>
+    <div 
+      class="timer-container" 
+      style={props.time < 10 ? {color: 'red', display: props.display} : {display: props.display}} >
       <div>{props.time}</div>
     </div>
   );

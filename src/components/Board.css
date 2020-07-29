@@ -10,7 +10,7 @@
   }
   
 .incorrect {
-    animation: flashRed 1s ease-in-out;
+    animation: flashRed 0.5s ease-in-out;
   }
   
 .correct {
