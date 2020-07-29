@@ -48,7 +48,8 @@ class Home extends Component {
             callbackEnd={this.callbackEnd} 
             orientation={this.state.orientation} 
             showNotation={this.state.showNotation} 
-            calcWidth={calcWidth} />
+            calcWidth={calcWidth}
+            timed={true} />
           </div>
         );
 

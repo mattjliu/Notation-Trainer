@@ -38,26 +38,32 @@ class Board extends Component {
 
   componentDidMount() {
     this.newPosition();
-    this.interval = setInterval(() => this.setState({ timerCount: this.state.timerCount+1 }), 1000); // Start timer
+
+    if(this.props.timed) {
+      this.interval = setInterval(() => this.setState({ timerCount: this.state.timerCount+1 }), 1000); // Start timer
     
-    // Call callbackEnd once timer stops
-    setTimeout(() => {
-      const finalBoardProps = {
-        position: this.state.fen,
-        squareStyles: this.state.squareStyles,
-        allowDrag: () => false , 
-        showNotation: this.props.showNotation,
-        orientation: this.props.orientation === 'random' ? this.state.orientation : this.props.orientation,
-        calcWidth: this.props.calcWidth,
-      }
-      this.props.callbackEnd(
-        this.state.correctMoves,
-        finalBoardProps)
-    }, this.state.time * 1000);
+      // Call callbackEnd once timer stops
+      setTimeout(() => {
+        const finalBoardProps = {
+          position: this.state.fen,
+          squareStyles: this.state.squareStyles,
+          allowDrag: () => false , 
+          showNotation: this.props.showNotation,
+          orientation: this.props.orientation === 'random' ? this.state.orientation : this.props.orientation,
+          calcWidth: this.props.calcWidth,
+        }
+        this.props.callbackEnd(
+          this.state.correctMoves,
+          finalBoardProps)
+      }, this.state.time * 1000);
+    }
+
   }
 
   componentWillUnmount() {
-    clearInterval(this.interval);
+    if(this.props.timed) {
+      clearInterval(this.interval);
+    } 
   }
 
   /* ====================================== Component Methods ====================================== */
