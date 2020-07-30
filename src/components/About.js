@@ -61,6 +61,7 @@ class About extends Component {
           of <a href="https://chessboardjsx.com/">Chessboard.jsx</a> and <a href="https://github.com/jhlywa/chess.js">chess.js</a>.
           The positions generated from the board are real positions from world championship games. 
           The PGN files from those events were downloaded <a href="https://www.pgnmentor.com/files.html#world">here</a>.
+          Sound effects were obtained from <a href="https://www.zapsplat.com/">https://www.zapsplat.com/</a>.
           You can also view the source code at my <a href="https://github.com/mattjliu/Notation-Trainer">github repository</a>.
         </p>
       </div>

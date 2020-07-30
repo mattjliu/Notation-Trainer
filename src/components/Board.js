@@ -1,11 +1,16 @@
 import React, { Component } from 'react';
 import Chessboard from "chessboardjsx";
 import * as Chess from 'chess.js';
+import correctSfx from '../sounds/correct.mp3';
+import incorrectSfx from '../sounds/incorrect.mp3';
 import PGNData from '../PGN/outfile.json';
 import { faCircle as blackCircle } from "@fortawesome/free-solid-svg-icons";
 import { faCircle as whiteCircle } from "@fortawesome/free-regular-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import './Board.css';
+
+let correctAudio;
+let incorrectAudio;
 
 const game = new Chess();
 const orientations = ['white', 'black'];
@@ -37,6 +42,8 @@ class Board extends Component {
   /* ====================================== Lifecylcle Methods ====================================== */
 
   componentDidMount() {
+    correctAudio = document.getElementsByClassName('correct-audio')[0];
+    incorrectAudio = document.getElementsByClassName('incorrect-audio')[0];
     this.newPosition();
 
     if(this.props.timed) {
@@ -169,10 +176,12 @@ class Board extends Component {
           correctMoves: this.state.correctMoves+1,
           correct: true
         });
+        correctAudio.play();
        } else if (sourceSquare === targetSquare) {
         // Skip if piece is dropped onto original square
        } else {
          this.setState({ answer: 'incorrect', incorrect: true });
+         incorrectAudio.play();
        }
   }
 
@@ -208,6 +217,14 @@ class Board extends Component {
 
     return (
       <div>
+        <div className='audio-group'>
+          <audio className='correct-audio' preload='auto'>
+            <source src={correctSfx} />
+          </audio>
+          <audio className='incorrect-audio' preload='auto'>
+            <source src={incorrectSfx} />
+          </audio>
+        </div>
         <Timer 
           time={this.state.time - this.state.timerCount} 
           display={this.props.timed ? 'block' : 'none'} />
