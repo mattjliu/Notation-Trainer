@@ -1,4 +1,7 @@
 # Notation Trainer
+[![made-with-react](https://img.shields.io/badge/Made%20with-React-blue)](https://reactjs.org/)
+[![npm-version](https://img.shields.io/badge/npm-v6.14.5-orange)](https://img.shields.io/badge/npm-v6.14.5-blue)
+[![license-mit](https://img.shields.io/badge/License-MIT-blue)](https://github.com/mattjliu/Notation-Trainer/blob/master/LICENSE)
 
 This is a [ReactJS](https://reactjs.org/) app I created to help chess players learn and practice [algebraic chess notation](https://en.wikipedia.org/wiki/Algebraic_notation_(chess)). The app is built using [chessboardjsx](https://chessboardjsx.com/) and [chess.js](https://github.com/jhlywa/chess.js). 
 
