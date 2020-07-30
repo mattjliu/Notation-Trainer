@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "4e8d9a152eac1833e7999d65f0971a3e",
+    "revision": "a7bffd025b32d5e9f2657de60115d604",
     "url": "/Notation-Trainer/index.html"
   },
   {
-    "revision": "56b7836871cd06a215da",
-    "url": "/Notation-Trainer/static/css/main.cf2a7c53.chunk.css"
+    "revision": "b6a9f76c7c8659944835",
+    "url": "/Notation-Trainer/static/css/main.5f18cade.chunk.css"
   },
   {
     "revision": "93e5c69b6691926118a4",
@@ -16,7 +16,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Notation-Trainer/static/js/2.f3ab8b89.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "56b7836871cd06a215da",
+    "revision": "b6a9f76c7c8659944835",
     "url": "/Notation-Trainer/static/js/main.db1e8ce2.chunk.js"
   },
   {
