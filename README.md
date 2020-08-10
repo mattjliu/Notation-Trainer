@@ -19,7 +19,7 @@ Here is a gif of the app in action:
 
 ### How are the positions generated?
 
-Positions and moves are taken from previous world championship games. The PGN files for those event were downloaded [here](https://www.pgnmentor.com/files.html#world).
+Positions and moves are taken from previous world championship games. The PGN files for those events were downloaded [here](https://www.pgnmentor.com/files.html#world).
 
 ## Install
 ```
